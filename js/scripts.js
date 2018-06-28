@@ -12,7 +12,7 @@
 
     //list event listener
     list.addEventListener("click", checkBox);
-    
+
     //add item to list
     function addTodoItem() {
       if(input.value === "") {
@@ -25,7 +25,7 @@
       var text = input.value;
       var item = `<li id="li-${id}">${text}
                  <input id="box-${id}"
-                    class="checkboxes" type="checkbox"></li>`
+                    class="checkbox" type="checkbox"></li>`
       list.insertAdjacentHTML('beforeend', item);
       id++;
       form.reset();
